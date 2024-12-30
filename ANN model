@@ -44,6 +44,8 @@ net.plotFcns = {'plotperform','plottrainstate','ploterrhist', 'plotregression', 
 
 % Train the Network
 [net,tr] = train(net,x,t);
+
+# identify the specified weights and biases for the hidden and outputlayers
 w1 = net.IW{1}; 
 w2 = net.LW{2}; 
 b1 = net.b{1}; 
